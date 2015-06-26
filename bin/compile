@@ -64,6 +64,9 @@ else
   warning "No tests specified. Please do it ASAP!"
 fi
 
+head "Removing devDependences"
+npm prune --production
+
 ####### Create a Procfile if possible
 
 head "Checking startup method"
